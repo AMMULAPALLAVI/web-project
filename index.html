@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> personal portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/bd57bd7562.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div  class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li> <a href="#header">Home</a></li>
+                    <li> <a href="#about">About</a></li>
+                    <li> <a href="#services">services</a></li>
+                    <li> <a href="#portfolio">portfolio</a></li>
+                    <li> <a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>web designer</p>
+                <h1> Hi, I'm<span> PALLAVI</span><br>AMMMULA</h1>
+            </div>
+        </div>
+    </div>
+    <!------------------------about--------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="https://res.cloudinary.com/dqhgowi9s/image/upload/v1735293748/photo_pallavi_kauplb.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p class="title_para">Hi, I am pallavi. I am currently a fresher passionate about web development and programming. 
+                        My projects include building a 'Daily Task Report Web Portal' using React for the frontend, Node.js and Express 
+                        for the backend,and MongoDB as the database. I am also developing a portfolio website using HTML, CSS, JavaScript, and Flask.
+                    </p>
+                    <div class="tab-titles">
+                       <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                       <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                       <p class="tab-links " onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>python</span><br></li>
+                            <li><span>Html</span><br></li>
+                            <li><span>MYSQL</span><br></li>
+                            <li><span>css</span><br></li>
+                            <li><span>JavaScript</span><br></li>
+                            <li><span>flask</span><br></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>****Fresher****</span><br></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017-2018(10th)</span><br>CGPA:9.7</li>
+                            <li><span>2018-2020(MPC)</span><br> marks:941/1000</li>
+                            <li><span>2020-2024(Btech-CSE)</span><br>CGPA:7.1</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------services---------------------------------->
+    <div id ="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>web Design</h2>
+                    <p> Web design is the process of creating visually appealing, user-friendly, 
+                        and responsive websites that enhance user experience.<br>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-laptop"></i>
+                    <h2>problem solving</h2>
+                    <p>
+                        Problem-solving is the process of identifying, analyzing, and resolving 
+                        challenges effectively using logical and creative approaches.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-database"></i>
+                    <h2>MySQL</h2>
+                    <p>
+                        MySQL is a powerful relational database management system used to store, 
+                        organize, and retrieve structured data efficiently.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!------------------------------portfolio------------------------------------>
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="https://res.cloudinary.com/dqhgowi9s/image/upload/v1724590080/01c2f07b_od59fn.png">
+                    <div class="layer">
+                        <h3 class="image_para_hedding"> Work</h3>
+                        <p class="image_para_hedding">Consistency in learning builds steady progress, leading to mastery and lasting knowledge.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://res.cloudinary.com/dqhgowi9s/image/upload/v1735542130/linkedin1_akwwnx.jpg">
+                    <div class="layer">
+                        <h3 class="image_para_hedding">Job seeker</h3>
+                        <p class="image_para_hedding">Job searching as a fresher is your chance to turn potential into opportunity and passion into success.</p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="https://res.cloudinary.com/dqhgowi9s/image/upload/v1735542576/image4_ean5os.jpg" class="image3">
+                    <div class="layer">
+                        <h3 class="image_para_hedding"> success</h3>
+                        <p class="image_para_hedding">"Learning is the ultimate key to success, empowering minds, unlocking boundless opportunities."
+                        </p>
+                        <a href="#"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <!----------------------------------contact----------------------------------->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title"> Contact Me</h1>
+                    <p class="contact-para"> <i class="fa-regular fa-paper-plane"></i>pallaviammula@gmail.com</p>
+                    <p class="contact-para"><i class="fa-solid fa-phone"></i>7075481248</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/pallavi_ammula?igsh=MWhkZDV1ZnZwengwdw==&utm_source=ig_contact_invite"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://github.com/AMMULAPALLAVI"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/ammula-pallavi-7927a8204?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="ApR.pdf" download class="btn btn2"> Download CV</a>
+                </div>
+                <div class=" content-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="your Name " required>
+                        <input type="email" name="email" placeholder="your Email " required>
+                        <textarea name="Message" rows="6" placeholder="your Message "></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                        
+
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copy-right">
+            <p> copyright pallavi's.<i class="fa-solid fa-heart"></i> resume-website creation</p>
+        </div>
+    </div>
+
+
+    <!-------------------------------------js-------------------------->
+    <script>
+        var tablinks=document.getElementsByClassName("tab-links");
+        var tabcontents=document.getElementsByClassName("tab-contents");
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link")
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu=document.getElementById("sidemenu");
+        function openmenu(){
+            sidemenu.style.right="0";
+        }
+        function closemenu(){
+            sidemenu.style.right="-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby3vIZJNOYjzvHNrJucDgcN99_-4R5T4_oosmvk6ICR2o1J7rNdCND8GRalgRCHxaL1/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const masg=document.getElementById("msg")
+      
+        form.addEventListener('submit', e => {
+          e.preventDefault()
+          fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response =>{
+                msg.innerHTML="message sent scuessfully"
+                setTimeout(function(){
+                    msg.innerHTML=""
+                },5000)
+                form.reset()
+            })
+           .catch(error => console.error('Error!', error.message))
+        })
+      </script>
+</body>
+</html>
