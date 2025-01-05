@@ -378,6 +378,9 @@ nav .fa-solid
     }
     .header-text h1{
         font-size: 30px;
+         text-align: left;
+        margin-right:40%;
+        margin-right:0px;
     }
     nav .fa-solid{
         display:block;
