@@ -15,9 +15,16 @@ body{
 #header{
     width:100vw;
     height:100vh;
-    background-image: url("https://res.cloudinary.com/dqhgowi9s/image/upload/v1716543513/samples/bike.jpg");
+    background-image: url("https://res.cloudinary.com/dqhgowi9s/image/upload/v1736060138/IMG20250105122307_yytfrt.jpg");
     background-size:cover;
-    background-repeat: center;
+}
+.image-container{
+    height:400px;
+    width:auto;
+    position: absolute;
+    left:25%;
+    top:50%;
+    transform: translateY(-50%);
 }
 .container{
     padding:10px 10%;
@@ -59,13 +66,15 @@ nav ul li a:hover::after{
 .header-text{
     margin-top: 10%;
     font-size: 30px;
-    margin-right: 25px;
     text-align:right;
+    justify-content: right;
 }
 .header-text h1{
     font-size:50px;
-    margin-top: 20px;
-    margin-right: 20px;
+    margin-top: 10px;
+    margin-left: 10px;
+    padding-left: 5%;
+    margin-right:10%;
 }
 .header-text span{
     color:red
@@ -89,9 +98,9 @@ nav ul li a:hover::after{
     flex-basis: 30%;
 }
 .about-col-1 img{
-    width:50%;
+    width:auto;
     border-radius:15px;
-    height:50vh;
+    height:40vh;
     margin-left:30%;
 }
 .about-col-2{
@@ -356,8 +365,11 @@ nav .fa-solid
 }
 @media only screen and (max-width:600px)
 {
+    .image-container {
+          display: none;
+    }
     #header{
-        background-image:url("https://res.cloudinary.com/dqhgowi9s/image/upload/v1735559918/bike_2_mdbvl8.jpg");
+        background-image:url("https://res.cloudinary.com/dqhgowi9s/image/upload/v1736059209/IMG_20250105_120602_orwya0.jpg");
     }
     .header-text{
         margin-top: 100%;
@@ -400,10 +412,21 @@ nav .fa-solid
 
     }
     .about-col-1{
-        margin-bottom: 30px;
+        flex-basis: 100%;
+        text-align: center;
+        margin-bottom: 20px;
     }
     .about-col-2{
-        font-size: 14px;
+        flex-basis: 100%;
+        padding-left: 10px;
+    }
+    .about-col-1 img {
+        width: 90%; /* Make the image wide */
+        max-width: 600px; /* Limit the maximum width */
+        height:90%; /* Maintain aspect ratio */
+        border-radius: 15px;
+        margin: 0 auto; /* Center the image horizontally */
+        display: block; /* Ensure it behaves like a block element */
     }
     .tab-links{
         font-size: 15px;
@@ -418,8 +441,119 @@ nav .fa-solid
     .sub-title{
         font-size: 25px;
     }
+    .service {
+        padding: 20px;
+        text-align: center;
+    }
 
+    /* Hide unnecessary images or elements */
+    .service .image-container {
+        display: none; /* Hides the image container */
+    }
 
+    .service h1 {
+        font-size: 24px;
+    }
+
+    .service p {
+        font-size: 14px;
+        line-height: 1.5;
+        margin: 10px 0;
+    }
+
+    .service-items {
+        display: flex;
+        flex-direction: column; 
+        gap: 15px;
+    }
+
+    .service-item {
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        background-color: #f9f9f9;
+    }
+    #services {
+        padding: 20px 10px; 
+    }
+    .services-list {
+        grid-template-columns: 1fr; 
+        grid-gap: 20px;
+        margin-top: 30px;
+        margin-left: 0; 
+    }
+    .services-list div {
+        padding: 20px; 
+        font-size: 14px; 
+        font-weight: 400; 
+        border-radius: 8px; 
+    }
+    .services-list div i {
+        font-size: 40px; 
+        margin-bottom: 15px; 
+    }
+    .services-list div h2 {
+        font-size: 20px; 
+        font-weight: 500;
+        margin-bottom: 10px;
+    }
+    .services-list div a {
+        font-size: 11px; 
+        margin-top: 15px; 
+    }
+    .services-list div:hover {
+        transform: none; 
+    }
+    
+    #portfolio {
+        padding: 30px 15px;
+    }
+    #portfolio p{
+        font-size: 12px;
+    }
+    #portfolio h3{
+        font-size: 14px;
+    }
+
+    .work-list {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-gap: 20px;
+    }
+
+    .work img {
+        width: 100%;
+        height: auto;
+    }
+
+    .work .image3 {
+        height: 200px;
+        width: auto;
+    }
+
+    .layer {
+        padding: 0 20px;
+        font-size: 16px;
+    }
+
+    .layer h3 {
+        font-size: 20px;
+    }
+
+    .layer a {
+        font-size: 16px;
+        line-height: 50px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .btn {
+        padding: 12px 40px;
+        font-size: 14px;
+    }
+
+    .contact-para {
+        font-size: 14px;
+    }
 }
 #msg{
     color:#61b752;
