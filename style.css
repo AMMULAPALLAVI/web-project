@@ -93,11 +93,11 @@ nav ul li a:hover::after{
     font-size: 30px;
     color:red
 }
-.row{
+/* .row{
 /*     display: flex; */
     justify-content:space-between;
     flex-wrap: wrap;
-}
+} */
 .about-col-1{
     flex-basis: 30%;
 }
